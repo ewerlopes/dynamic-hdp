@@ -7,7 +7,7 @@
 This is the C++ implementation of a dynamic Hierarchical Dirichlet process topic model. For the vanilla batch HDP implementation by Chong Wang and David Blei is used.
 
 The model is introduced in
-O.Isupova, D.Kuzin, L.Mihaylova. Dynamic Hierarchical Dirichlet Process for Abnormal Behaviour Detection in Video. Submitted to the 19th International Conference on Information Fusion 2016 and ICML 2016 Anomaly Detection Workshop.
+O.Isupova, D.Kuzin, L.Mihaylova. Dynamic Hierarchical Dirichlet Process for Abnormal Behaviour Detection in Video. Accepted to the 19th International Conference on Information Fusion 2016 and ICML 2016 Anomaly Detection Workshop.
 
 
 Note, the code requires the GNU Scientific Library.
