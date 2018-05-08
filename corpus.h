@@ -2,6 +2,7 @@
 #define	_CORPUS_H
 
 #include <vector>
+#include <stdio.h>
 using namespace std;
 
 class document
@@ -61,4 +62,3 @@ public:
 };
 
 #endif	/* _CORPUS_H */
-

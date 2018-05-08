@@ -18,6 +18,7 @@
 #include <gsl/gsl_sf_gamma.h>
 
 #include <vector>
+#include <string>
 using namespace std;
 
 double log_sum(double log_a, double log_b);
@@ -123,7 +124,7 @@ template <typename T> void add_array(vector<T*>& input_array,
 {
     int vector_size = min(_vector_size_first, _vector_size_second);
 	if (vector_size == 0) vector_size = input_array.size();
-    
+
     for (int i = 0; i < vector_size; ++i) {
         for (int j = 0; j < row_size; ++j) {
             input_array[i][j] = input_array[i][j] + add_array[i][j];
