@@ -91,7 +91,7 @@ This runs the dynamic HDP for online inference on the given testing data. It als
 
 ### SYNTHETIC DATA
 
-In the paper the synthetic data is used for testing the algorithms. The train synthetic data is saved in the file `synthetic_dynamic_train_LDA_format.dat`, the testing synthetic data is saved in the file `synthetic_dynamic_test_LDA_format.dat`.
+In the paper the synthetic data is used for testing the algorithms. The train synthetic data is saved in the file `data/synthetic_dynamic_train_LDA_format.dat`, the testing synthetic data is saved in the file `data/synthetic_dynamic_test_LDA_format.dat`.
 
 In order to get the results from the paper it is required:
 
