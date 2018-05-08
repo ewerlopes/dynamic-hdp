@@ -2,27 +2,24 @@ cmake_minimum_required(VERSION 3.3)
 project(HDP_experiments)
 
 find_package(GSL)
+if(NOT OPENGL_FOUND)
+    message(ERROR "GSL library not found!")
+endif(NOT OPENGL_FOUND)
+
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
+INCLUDE_DIRECTORIES(${GSL_INCLUDE_DIRS} include)
+
 set(SOURCE_FILES
-    corpus.cpp
-    corpus.h
-    hdp.cpp
-    hdp.h
-    likelihood_computer.cpp
-    likelihood_computer.h
-    main.cpp
-    running.cpp
-    running.h
-    state.cpp
-    state.h
-    utils.cpp
-    utils.h)
+    src/corpus.cpp
+    src/hdp.cpp
+    src/likelihood_computer.cpp
+    src/main.cpp
+    src/running.cpp
+    src/state.cpp
+    src/utils.cpp)
 
-add_executable(HDP_experiments ${SOURCE_FILES})
+add_executable(${PROJECT_NAME} ${SOURCE_FILES})
+target_link_libraries (${PROJECT_NAME} ${GSL_LIBRARIES})
 
-if (GSL_FOUND)
-    include_directories(${GSL_INCLUDE_DIRS})
-    target_link_libraries (HDP_experiments ${GSL_LIBRARIES})
-endif (GSL_FOUND)
