@@ -3,6 +3,7 @@
 #include <iostream>
 #include "utils.h"
 #include "hdp.h"
+#include "hdp_dynamic.h"
 #include "running.h"
 #define VERBOSE true
 
@@ -136,7 +137,7 @@ int main(int argc, char** argv)
         printf("directory:          = %s\n", directory);
 
         printf("max_iter            = %d\n", max_iter);
-        printf("random_seed         = %d\n", seed);
+        printf("random_seed         = %ld\n", seed);
         printf("vocab_size          = %d\n", m_vocab_size);
         printf("sampler_number      = %d\n", m_samplers);
         printf("gamma_a             = %.2f\n", gamma_a);

@@ -1,4 +1,5 @@
 #include "hdp.h"
+#include "hdp_dynamic.h"
 #include "likelihood_computer.h"
 #include "utils.h"
 #include "corpus.h"

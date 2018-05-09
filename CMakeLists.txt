@@ -14,6 +14,7 @@ INCLUDE_DIRECTORIES(${GSL_INCLUDE_DIRS} include)
 set(SOURCE_FILES
     src/corpus.cpp
     src/hdp.cpp
+    src/hdp_dynamic.cpp
     src/likelihood_computer.cpp
     src/main.cpp
     src/running.cpp

@@ -1,6 +1,7 @@
 #include "running.h"
 #include "corpus.h"
 #include "hdp.h"
+#include "hdp_dynamic.h"
 #include "utils.h"
 #include "likelihood_computer.h"
 #include <string>
